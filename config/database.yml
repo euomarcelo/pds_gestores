@@ -32,11 +32,9 @@ test:
   socket: /var/run/mysqld/mysqld.sock
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: pdsgestores_production
-  pool: 5
-  username: root
-  password: 'mysql'
-  socket: /var/lib/mysql/mysql.sock
+  pool: 5  
+  # socket: /var/lib/mysql/mysql.sock
