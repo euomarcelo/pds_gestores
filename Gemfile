@@ -38,6 +38,22 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'thin'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'faker'  
+  gem 'launchy'
+  gem 'factory_girl_rails'
+  gem 'capybara', '>=2.2.0.beta'
+  gem 'selenium-webdriver' 
+  # gem 'database_cleaner', '~> 0.7.1' # RLY...?  
+end
+
+group :test do  
+  gem 'shoulda-matchers'
+  # gem 'vcr'
+  # gem 'webmock' 
+end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
