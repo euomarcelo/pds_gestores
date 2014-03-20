@@ -1,9 +1,15 @@
 PdsGestores::Application.routes.draw do
+  root to: 'pages#inicio'
+  
+  get 'inicio' => "pages#inicio"
+  get 'sobre' => "pages#sobre"
+  get 'noticias' => "pages#noticias"
+  get 'wiki' => "pages#wiki"
+  get 'forum' => "pages#forum"
+  get 'cursos' => "pages#cursos"
+  
   # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  # See how all your routes lay out with "rake routes".  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
