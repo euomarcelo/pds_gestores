@@ -38,6 +38,11 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'thin'
 
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+gem 'bootstrap-addons-rails'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'faker'  
