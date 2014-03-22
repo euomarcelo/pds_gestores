@@ -6,9 +6,9 @@
 					<a href="#content" accesskey="1">Ir para o conteúdo <span>1</span></a> |  
 					<a href="#menu_lateral" accesskey="2">Ir para o menu <span>2</span></a> |  
 					<a href="#busca" accesskey="3">Ir para a busca <span>3</span></a> | 
-					<a href="footer" accesskey="4">Ir para o rodapé <span>4</span></a>
+					<a href="#rodape" accesskey="4">Ir para o rodapé <span>4</span></a>
 				</ul>
-			</div>
+			</div>			
 			<div id="accessibility_actions">
 				<ul class="inline pull-right">				  
 					<a href="#">ACESSIBILIDADE</a> |  
@@ -18,19 +18,38 @@
 			</div>
 		</div>
 	</div>	
-	<div id="nav_big" class="container-fluid">		
-		<div id="logo">
-			
-		</div>
-		<div id="busca">
-			
+	<div id="logo_bar" class="container-fluid">
+		<div class="row-fluid">
+			<div id="logo" class="span6">
+				<h5 id="logo_denomination">Portal para gestores locais</h3>
+				<h1 id="logo_portal_name">Planejamento Governamental</h1>
+				<h6 id="logo_subordination">MINISTÉRIO DO PLANEJAMENTO, ORÇAMENTO E GESTÃO</h5>
+			</div>
+			<div id="busca_e_social" class="span6">
+				<div class="vertical-aligned">
+					<div id="busca">
+						<form class="form-search pull-right">
+						    <div class="input-append">
+						        <input type="text" class="search-query">
+						        <button type="submit" class="btn"><%= glyph('search') %></button>
+						    </div>				    
+						</form>
+					</div>					
+					<div id="social">
+						<div id="social_links" class="pull-right">
+							<a href="#"><%= glyph("facebook-sign") %></a>
+							<a href="#"><%= glyph("twitter-sign") %></a>	
+							<a href="#"><%= glyph("youtube-sign") %></a>		
+						</div>						
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="nav_services" class="navbar navbar-fluid-top">
 		<div class="navbar-inner">
 			<div class="container-fluid">
-				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-				<a class="brand" href="#">Planejamento Governamental</a>
+				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>				
 				<div class="container-fluid nav-collapse">
 					<ul class="nav pull-right">
 						<li>
